@@ -1,0 +1,25 @@
+DESIGNBYOMINO — sito starter
+
+ANTEPRIMA LOCALE
+1. Estrai lo ZIP.
+2. Apri index.html con un browser.
+
+AGGIUNGERE LE FOTO
+Copia le tue foto nella cartella images e rinominale esattamente:
+- tshirt-01.jpg
+- tshirt-02.jpg
+- hoodie-01.jpg
+
+Puoi sostituire i file con immagini .jpg usando gli stessi nomi.
+Per aggiungere altri prodotti, duplica un blocco <article class="card"> nel file index.html e modifica nome, prezzo, taglie e immagine.
+
+WHATSAPP
+I pulsanti aprono una chat al numero +39 320 405 7322 con un messaggio precompilato.
+Il cliente deve premere Invia in WhatsApp: il sito non spedisce messaggi in background.
+Non è un checkout con pagamento online: pagamento e spedizione si concordano direttamente.
+
+PUBBLICAZIONE
+Questo è un sito HTML autonomo, non un file importabile direttamente in Google Sites.
+Puoi pubblicarlo gratuitamente con GitHub Pages creando un repository pubblico, caricando index.html e la cartella images, poi attivando Settings > Pages.
+Google Sites può invece essere usato come sito vetrina incorporando contenuti, ma non ospita direttamente questo progetto HTML completo.
+Prima della pubblicazione aggiungi dati aziendali, condizioni di vendita, privacy/cookie policy e informazioni su spedizioni e resi, secondo gli obblighi applicabili.

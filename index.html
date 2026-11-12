@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>DESIGNBYOMINO — Wear Your Story</title>
+  <meta name="description" content="DESIGNBYOMINO — Independent streetwear. Wear your story.">
+  <style>
+    :root{--bg:#090909;--panel:#141414;--ink:#f5f5f5;--muted:#aaa;--line:#303030;--accent:#d32d45}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#090909ed;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-size:19px;font-weight:900;letter-spacing:1.5px}.logo span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+    .hero{min-height:530px;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+      background:radial-gradient(ellipse at 75% 45%,#333 0,#171717 30%,#090909 72%)}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#090909 5%,#090909d9 42%,transparent 100%)}
+    .hero-content{position:relative;z-index:1;padding:85px 0;max-width:660px}
+    .eyebrow{font-size:11px;letter-spacing:4px;color:#ddd;text-transform:uppercase}
+    h1{font-size:clamp(48px,9vw,100px);line-height:.88;letter-spacing:-5px;margin:22px 0;font-weight:950}
+    h1 span{color:var(--accent)}
+    .hero p{color:#c7c7c7;letter-spacing:3px;font-size:13px}
+    .btn{display:inline-block;background:var(--ink);color:#080808;padding:15px 23px;font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-top:22px;border:0;cursor:pointer}
+    .btn.red{background:var(--accent);color:white}
+    section{padding:76px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}
+    h2{font-size:clamp(28px,5vw,46px);letter-spacing:-1.5px;margin:8px 0}
+    .muted{color:var(--muted);font-size:13px;line-height:1.7}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--panel);border:1px solid var(--line)}
+    .photo{aspect-ratio:4/5;background:linear-gradient(145deg,#292929,#101010);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .placeholder{font-size:11px;letter-spacing:2px;text-align:center;color:#888;padding:20px}
+    .details{padding:18px}
+    .details h3{margin:0 0 8px;font-size:16px;letter-spacing:1px;text-transform:uppercase}
+    .price{font-weight:800;font-size:18px}.small{font-size:11px;color:var(--muted);margin-top:7px}
+    .buy{width:100%;margin-top:15px}
+    .about{background:#111;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .stamp{border:1px solid #555;min-height:250px;display:grid;place-items:center;text-align:center;padding:25px}
+    .stamp strong{font-size:clamp(35px,6vw,65px);line-height:.9;letter-spacing:-3px}
+    .stamp em{color:var(--accent);font-style:normal}
+    footer{padding:35px 0;color:#888;font-size:11px;letter-spacing:1px;border-top:1px solid var(--line)}
+    .modal{display:none;position:fixed;inset:0;background:#000c;z-index:10;align-items:center;justify-content:center;padding:18px}
+    .modal.open{display:flex}.box{background:#151515;border:1px solid #444;padding:25px;width:min(440px,100%)}
+    .box h3{margin-top:0}.box label{display:block;font-size:12px;color:#bbb;margin:14px 0 6px}
+    input,select{width:100%;padding:12px;background:#080808;border:1px solid #444;color:white}
+    .close{float:right;background:none;border:0;color:white;font-size:23px;cursor:pointer}
+    @media(max-width:700px){.navlinks{gap:12px;font-size:10px}.hero{min-height:470px}.grid{grid-template-columns:1fr 1fr}.about-inner{grid-template-columns:1fr}.section-head{display:block}}
+    @media(max-width:430px){.grid{grid-template-columns:1fr}.logo{font-size:15px}.navlinks{gap:9px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="#">DESIGN<span>BY</span>OMINO</a>
+  <div class="navlinks"><a href="#shop">Shop</a><a href="#brand">Il brand</a><a href="#contatti">Contatti</a></div>
+</nav></div></header>
+
+<main>
+  <section class="hero"><div class="wrap"><div class="hero-content">
+    <div class="eyebrow">Independent streetwear · Est. with attitude</div>
+    <h1>WEAR YOUR<br><span>STORY.</span></h1>
+    <p>MORE THAN FASHION. YOUR IDENTITY.</p>
+    <a class="btn" href="#shop">Scopri la collezione</a>
+  </div></div></section>
+
+  <section id="shop" class="wrap">
+    <div class="section-head"><div><div class="eyebrow">La selezione</div><h2>SHOP THE DROP.</h2></div>
+      <div class="muted">Scegli il tuo capo e ordina<br>direttamente su WhatsApp.</div></div>
+    <div class="grid">
+      <article class="card">
+        <div class="photo"><img src="images/tshirt-01.jpg" alt="T-shirt DESIGNBYOMINO" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="placeholder" style="display:none">INSERISCI FOTO<br>tshirt-01.jpg</div></div>
+        <div class="details"><h3>T-shirt DESIGNBYOMINO</h3><div class="price">24,99 €</div><div class="small">Taglie disponibili: S · M · L · XL</div><button class="btn red buy" onclick="openOrder('T-shirt DESIGNBYOMINO','24,99 €','S,M,L,XL')">Ordina ora</button></div>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/tshirt-02.jpg" alt="T-shirt DESIGNBYOMINO 02" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="placeholder" style="display:none">INSERISCI FOTO<br>tshirt-02.jpg</div></div>
+        <div class="details"><h3>T-shirt — Modello 02</h3><div class="price">24,99 €</div><div class="small">Taglie disponibili: S · M · L · XL</div><button class="btn red buy" onclick="openOrder('T-shirt — Modello 02','24,99 €','S,M,L,XL')">Ordina ora</button></div>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/hoodie-01.jpg" alt="Felpa DESIGNBYOMINO" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="placeholder" style="display:none">INSERISCI FOTO<br>hoodie-01.jpg</div></div>
+        <div class="details"><h3>Felpa DESIGNBYOMINO</h3><div class="price">Prezzo da definire</div><div class="small">Disponibilità e prezzo da confermare</div><button class="btn buy" onclick="openOrder('Felpa DESIGNBYOMINO','Prezzo da concordare','Da concordare')">Chiedi informazioni</button></div>
+      </article>
+    </div>
+    <p class="muted" style="margin-top:18px">Altri modelli possono essere aggiunti duplicando una scheda prodotto. Le immagini sono segnaposto: sostituiscile con le tue foto mantenendo i nomi dei file.</p>
+  </section>
+
+  <section id="brand" class="about"><div class="wrap about-inner">
+    <div><div class="eyebrow">La nostra identità</div><h2>MORE THAN<br>FASHION.</h2><p class="muted">DESIGNBYOMINO nasce per chi usa lo stile per raccontare chi è. Street culture, carattere e libertà di espressione: indossa la tua storia.</p></div>
+    <div class="stamp"><div><strong>DESIGN<br><em>BY</em> OMINO</strong><p class="eyebrow">WEAR YOUR STORY.</p></div></div>
+  </div></section>
+
+  <section id="contatti" class="wrap" style="text-align:center"><div class="eyebrow">Hai una domanda?</div><h2>PARLIAMONE.</h2><p class="muted">Scrivici su WhatsApp per informazioni su prodotti, taglie e ordini.</p><a class="btn red" href="https://wa.me/393204057322?text=Ciao%20DESIGNBYOMINO%2C%20vorrei%20avere%20informazioni.">Contattaci su WhatsApp</a></section>
+</main>
+<footer><div class="wrap">© DESIGNBYOMINO · WEAR YOUR STORY. <span style="float:right">STREETWEAR / ITALY</span></div></footer>
+
+<div class="modal" id="orderModal"><div class="box">
+  <button class="close" onclick="closeOrder()" aria-label="Chiudi">×</button>
+  <div class="eyebrow">Ordina direttamente</div><h3 id="productTitle">Il tuo prodotto</h3><p class="muted" id="productPrice"></p>
+  <label for="size">Taglia</label><select id="size"></select>
+  <label for="color">Colore</label><input id="color" placeholder="Es. Nero">
+  <label for="qty">Quantità</label><input id="qty" type="number" min="1" value="1">
+  <label for="customer">Nome</label><input id="customer" placeholder="Il tuo nome">
+  <label for="note">Note (facoltative)</label><input id="note" placeholder="Es. informazioni sulla spedizione">
+  <button class="btn red buy" onclick="sendOrder()">Invia ordine su WhatsApp</button>
+  <p class="small">L'ordine verrà inviato come messaggio WhatsApp. Il pagamento e la spedizione saranno concordati direttamente.</p>
+</div></div>
+<script>
+let current={name:'',price:'',sizes:''};
+function openOrder(name,price,sizes){
+  current={name,price,sizes};document.getElementById('productTitle').textContent=name;
+  document.getElementById('productPrice').textContent=price;
+  const sel=document.getElementById('size');sel.innerHTML='';
+  (sizes==='S,M,L,XL'?['S','M','L','XL']:['Da concordare']).forEach(s=>{let o=document.createElement('option');o.value=s;o.textContent=s;sel.appendChild(o)});
+  document.getElementById('orderModal').classList.add('open');
+}
+function closeOrder(){document.getElementById('orderModal').classList.remove('open')}
+function sendOrder(){
+  const size=document.getElementById('size').value, color=document.getElementById('color').value||'Da concordare';
+  const qty=document.getElementById('qty').value||'1', customer=document.getElementById('customer').value.trim(), note=document.getElementById('note').value.trim();
+  if(!customer){alert('Inserisci il tuo nome per continuare.');return}
+  const msg=`Ciao DESIGNBYOMINO! Vorrei effettuare un ordine:\nProdotto: ${current.name}\nPrezzo indicato: ${current.price}\nTaglia: ${size}\nColore: ${color}\nQuantità: ${qty}\nNome: ${customer}\nNote: ${note}`;
+  window.open('https://wa.me/393204057322?text='+encodeURIComponent(msg),'_blank');
+}
+</script>
+</body>
+</html>
